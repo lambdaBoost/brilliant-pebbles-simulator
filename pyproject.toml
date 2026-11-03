@@ -1,0 +1,20 @@
+[project]
+name = "brilliant-pebbles"
+version = "0.2.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lambdaBoost", email = "enquiries@alex-hall.co.uk" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+brilliant-pebbles = "brilliant_pebbles:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+where = ["src"]
